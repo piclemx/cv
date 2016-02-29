@@ -1,0 +1,168 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.8,top=2cm]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+\setlength{\makecvtitlenamewidth}{12cm}
+\renewcommand*{\namefont}{\fontsize{24}{29}\mdseries\upshape}
+
+\firstname{Alexandre} % Your first name
+\familyname{Picard-Lemieux} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Étudiant en informatique de gestion}
+\address{359 rue Gabrielle-Roy}{Saint-Nicolas, QC, G7A 3L3}
+\mobile{(581) 997-8844}
+\phone{(418) 836-5877}
+\email{alexandre.picardlemieux@gmail.com}
+\homepage{www.linkedin.com/profile/view?id=339865317}{www.linkedin.com/profile/view?id=339865317} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\extrainfo{Références fournies sur demande}
+\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+\vspace*{-12mm}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\setlength{\hintscolumnwidth}{3cm}
+\section{Formation}
+
+\cventry{2014--2016}{Baccalauréat en informatique (B.Sc.A.)}{Université Laval}{Québec}{\textit{3.33/4.33}}{}  % Arguments not required can be left empty
+\cventry{2011--2014}{Technique de l'informatique (DEC/BAC)}{Cégep Garneau}{Québec}{}{Spécialisation en informatique de gestion \newline Programme complété en alternance travail-études}
+\cventry{2006--2011}{Diplôme d’études secondaires } {Juvénat Notre-Dame} {Québec} {} {Programme spécialisé, option soccer}
+
+%
+% \section{Masters Thesis}
+
+% \cvitem{Title}{\emph{Money Is The Root Of All Evil -- Or Is It?}}
+% \cvitem{Supervisors}{Professor James Smith \& Associate Professor Jane Smith}
+% \cvitem{Description}{This thesis explored the idea that money has been the cause of untold anguish and suffering in the world. I found that it has, in fact, not.}
+%
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Expériences Professionnelles}
+
+
+\cventry{2014--Aujourd'hui}{Programmeur Analyste}{\textsc{Promutuel Assurances}}{Québec}{}{
+\begin{itemize}
+\item Support Applicatif
+\item Programmation en Java, Java EE, Javascript, JQuery et Gosu.
+\item Entretien de l'intranet
+\item Développement d'une application web pour les centres d'appels (Java avec Spring MVC)
+\end{itemize}}
+
+%------------------------------------------------
+
+\cventry{2013--2014}{Agent de soutien technique et Opérateur}{\textsc{Promutuel Assurances}}{Québec}{}{
+\begin{itemize}
+\item Offrir un support technique de niveau 1
+\item Effectuer des opérations sur les serveurs
+\item Partir des batchs sur le Central d'IBM
+\
+\end{itemize}
+}
+
+%------------------------------------------------
+\cventry{2012-2013} {Agent de bureau} {\textsc{Société d'assurance automobile du Québec}} {Québec} {} {
+\begin{itemize}
+\item Saisie de données
+\item Appeler les clients
+\item Analyser des demandes
+\end{itemize}
+}
+%------------------------------------------------
+\cventry{2011--2013}{Commis, caissier, pâtissier}{\textsc{Tim Hortons}}{Québec}{}{
+\begin{itemize}
+\item Servir des clients
+\item Préparation de commande
+\end{itemize}
+}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+% \section{Awards}
+
+% \cvitem{2011}{School of Business Postgraduate Scholarship}
+% \cvitem{2010}{Top Achiever Award -- Commerce}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Compétences informatiques}
+
+\cvitem{Programmation}{\textsc{java},\textsc{python}, \textsc{C$ ^\sharp $} , \textsc{C++}, \textsc{asp.net} ,\textsc{php}, \textsc{JQuery}, \textsc{ajax}, \textsc{gosu}, \textsc{JavaScript}, \textsc{vb.net}, \textsc{xml}, \textsc{xslt},\textsc{xsd}, \textsc{css3}, \textsc{html5}, \textsc{vba} }
+\cvitem{Base de donnée} {MySQL, Oracle, Acces, SQL, PL/SQL}
+\cvitem{Autres}{Eclipse, Android, Git, Guidewire,Windows, Microsoft Office, Linux, Visual Studio, NetBeans, JasperReports, WordPress }
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{Français}{Langue maternelle}{}
+\cvitemwithcomment{Anglais}{Intermédiaire}{Compétence professionnelle}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Centres d’intérêt}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Programmation}{Informatique}
+\cvlistdoubleitem{Site Web}{Football}
+\cvlistdoubleitem{Hockey}{Soccer}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+%
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+%
+%\makelettertitle % Print letter title
+%
+%\lipsum[1-3] % Dummy text
+%
+%\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
