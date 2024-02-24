@@ -6,8 +6,8 @@
 
 \documentclass[10pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 
-\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{grey} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
 \usepackage[utf8]{inputenc}
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
@@ -26,14 +26,13 @@
 \familyname{Picard-Lemieux} % Your last name
 
 % All information in this block is optional, comment out any lines you don't need
-\title{Étudiant en informatique de gestion}
-\address{359 rue Gabrielle-Roy}{Lévis, QC, G7A 3L3}
+\title{Software Engineering Manager}
+\address{1218 rue de la Brigantine}{Lévis, QC, G7A 0Z7}
 \mobile{(581) 997-8844}
-\phone{(418) 836-5877}
 \email{alexandre.picardlemieux@gmail.com}
 \homepage{ca.linkedin.com/in/alexandrepicardlemieux}{http://ca.linkedin.com/in/alexandrepicardlemieux} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
-\extrainfo{Références fournies sur demande}
-% \photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+\extrainfo{References available upon request}
+% \photo[70pt][0.4pt]{pictures/picture.jpg} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 
 %----------------------------------------------------------------------------------------
 
@@ -47,11 +46,10 @@
 %----------------------------------------------------------------------------------------
 
 \setlength{\hintscolumnwidth}{3cm}
-\section{Formation}
-
-\cventry{2014--2016}{Baccalauréat en informatique (B.Sc.A.)}{Université Laval}{Québec}{}{}  % Arguments not required can be left empty
-\cventry{2011--2014}{Technique de l'informatique (DEC/BAC)}{Cégep Garneau}{Québec}{}{Spécialisation en informatique de gestion \newline Programme complété en alternance travail-études}
-\cventry{2006--2011}{Diplôme d’études secondaires } {Juvénat Notre-Dame} {Québec} {} {Programme spécialisé, option soccer}
+\section{Education}
+\cventry{2016--Today}{MBA, Strategic project management}{Université Laval}{Québec}{}{}  % Arguments not required can be left empty
+\cventry{2014--2016}{B.A.Sc. Computer Science}{Université Laval}{Québec}{}{}  % Arguments not required can be left empty
+\cventry{2011--2014}{Degree}{Cégep Garneau}{Québec}{}{Specialization in management IT \newline Program completed on a work-study basis}
 
 %
 % \section{Masters Thesis}
@@ -65,50 +63,91 @@
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Expériences Professionnelles}
+\section{Work Experience}
 
-\cventry{2016--Aujourd'hui}{Software Developper}{\textsc{Ticketmaster}}{Québec}{}{
+\cventry{2022--Today}{Software Engineering Manager}{\textsc{Ticketmaster}}{Québec}{}{
+In this role, I was in charge of a team of 8 engineers that were responsible of the TM1 Core platform. We are responsible of the key components that powers multiple teams accross Ticketmaster. \textbf{Here are the things that we are responsible:}
 \begin{itemize}
-\item TCT
-\item EMT
-\item EventBase
+    \item Transport and delivery
+        \begin{itemize}
+            \item API Gateway
+            \item CDN
+            \item GraphQL Federation
+            \item etc.
+        \end{itemize}
+    \item Provisioning
+        \begin{itemize}
+            \item Merged 45 applications/components/widget into one TM1 experience for clients
+            \item Global Datastore
+            \item Translations
+        \end{itemize}
+    \item Developer Tooling
+    \item Observability \& Reliability
+\end{itemize}
+\textbf{Completed project:}
+\begin{itemize}
+\item Migration of all logs into one centralized place
+\item GraphQL foundations, enabling readiness
+\item Produce Technical assessment for Production Readiness
+\item Migration to a new Identity Provider Platform
+\item Put in place the next gen Provisioning of the platform
+\item Add multi tenant datastore
+\end{itemize}
+}
+
+
+\cventry{2019--2022}{Lead Site Reliability Engineer}{\textsc{Ticketmaster}}{Québec}{}{
+In this role, I lead the practice of SRE for everything related to entry of events at Ticketmaster. Define good practices and put them in place. Offer services to help product teams spend more time on features. Put in place resilience mechanisms.
+\newline
+\newline
+\textbf{Completed project:}
+\begin{itemize}
+    \item Evaluation to change our database responsible of Safetix so that our system is more available and reliable throughout the world.
+    \item Creation of a Kubernetes Operator for managing how to easily handle integratio of logs into a search system.
+    \item Creation of a report showing the next numbers of entries possible for next week.
+    \item Reduce toil by automation of multiple manual processes.
+    \item Creation of a system for generating reports for the Safetix.
+\end{itemize}}
+
+\cventry{2019--2021}{Senior Software Developper}{\textsc{Ticketmaster}}{Québec}{}{
+    In this role, I led a group of developers in the TM1 platform team. TM1 is Ticketmaster's B2B platform.
+    We were responsible for the global and core components of the platform. Our goals was to deliver to the product teams solution that can simplify their journey of adding more feature in their component.
+    \newline
+    \newline
+    \textbf{Completed project:}
+    \begin{itemize}
+        \item Implementation of an API gateway to replace old components
+        \item Emulation of old functionality to smooth the transition of our new components
+        \item Implementation of a log system
+        \item Development of the microfrontend strategy.
+        \item Creation of a reusable web component to display a client's events.
+    \end{itemize}
+}
+
+\cventry{2016--2019}{Software Developper}{\textsc{Ticketmaster}}{Québec}{}{
+\begin{itemize}
+\item Development of a smart pricing tool when building an event.
+\item Development of the digital ticket on iOS and Android.
+\item Development of the Event management application.
+\item Migration of an application from Onprem to the cloud using Terraform, AWS.
 \end{itemize}}
 
 %------------------------------------------------
 
-\cventry{2014--Aujourd'hui}{Programmeur Analyste}{\textsc{Promutuel Assurances}}{Québec}{}{
+\cventry{2014--2016}{Software Developper}{\textsc{Promutuel Insurance}}{Québec}{}{
 \begin{itemize}
-\item Support Applicatif
-\item Programmation en Java, Java EE, Javascript, JQuery et Gosu.
-\item Entretien de l'intranet
-\item Développement d'une application web pour les centres d'appels (Java avec Spring MVC)
-\item Développement dans le projet SCA
+\item Application Support team using Java, Java EE, Javascript, JQuery and Gosu.
+\item Development of a web application for the call center using Java and Spring MVC
+\item Development of a web application for the accounting system
 \end{itemize}}
 
 %------------------------------------------------
 
-\cventry{2013--2014}{Agent de soutien technique et Opérateur}{\textsc{Promutuel Assurances}}{Québec}{}{
+\cventry{2013--2014}{IT Support Agent and Operator}{\textsc{Promutuel Insurance}}{Québec}{}{
 \begin{itemize}
-\item Offrir un support technique de niveau 1
-\item Effectuer des opérations sur les serveurs
-\item Partir des batchs sur le Central d'IBM
+\item Offer first layer technical support
+\item Maintenance and Operations on servers
 \
-\end{itemize}
-}
-
-%------------------------------------------------
-\cventry{2012-2013} {Agent de bureau} {\textsc{Société d'assurance automobile du Québec}} {Québec} {} {
-\begin{itemize}
-\item Saisie de données
-\item Appeler les clients
-\item Analyser des demandes
-\end{itemize}
-}
-%------------------------------------------------
-\cventry{2011--2013}{Commis, caissier, pâtissier}{\textsc{Tim Hortons}}{Québec}{}{
-\begin{itemize}
-\item Servir des clients
-\item Préparation de commande
 \end{itemize}
 }
 
@@ -116,40 +155,41 @@
 %	AWARDS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Prix}
+\section{AWARDS}
 
-\cvitem{2015}{Finaliste - Prix Pierre Ardouin}
+\cvitem{2015}{Finalist - Pierre Ardouin}
 % \cvitem{2010}{Top Achiever Award -- Commerce}
 
 %----------------------------------------------------------------------------------------
 %	COMPUTER SKILLS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Compétences informatiques}
-
-\cvitem{Programmation}{\textsc{java},\textsc{python}, \textsc{NodeJs}, \textsc{C$ ^\sharp $} , \textsc{C++}, \textsc{asp.net} ,\textsc{php}, \textsc{JQuery}, \textsc{ajax}, \textsc{gosu}, \textsc{JavaScript}, \textsc{vb.net}, \textsc{xml}, \textsc{xslt},\textsc{xsd}, \textsc{css3}, \textsc{html5}, \textsc{vba} }
-\cvitem{Base de donnée} {MySQL, Oracle, Acces, SQL, PL/SQL}
-\cvitem{Autres}{Eclipse, Android, Git, Guidewire,Windows, Microsoft Office, Linux, Visual Studio, NetBeans, JasperReports, WordPress, IntelliJ, WebStorm }
+\section{COMPUTER SKILLS}
+\cvitem{IaC}{ Terraform, Pulumi, Ansible }
+\cvitem{Languages}{ Java, Golang, Typescript/Javascript, Python, C++, Rust}
+\cvitem{Database} {MySQL, Oracle, ScyllaDB, PostgreSQL, DynamoDB, Opensearch}
+\cvitem{Messaging} {Kafka, SQS, RabbitMQ}
+\cvitem{Cloud}{AWS, GCP, Cloudstack}
 
 %----------------------------------------------------------------------------------------
 %	LANGUAGES SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Languages}
+\section{LANGUAGES}
 
-\cvitemwithcomment{Français}{Langue maternelle}{}
-\cvitemwithcomment{Anglais}{Intermédiaire}{Compétence professionnelle}
+\cvitemwithcomment{French}{Advance}{Native}
+\cvitemwithcomment{English}{Advance}{Fluent}
 
 %----------------------------------------------------------------------------------------
 %	INTERESTS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Centres d’intérêt}
+\section{INTERESTS}
 
 \renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
-
-\cvlistdoubleitem{Programmation}{Informatique}
-\cvlistdoubleitem{Site Web}{Football}
+\cvlistdoubleitem{Platform Engineering}{Reliability}
+\cvlistdoubleitem{Distributed System}{Solving Problems}
+\cvlistdoubleitem{Learning new thing}{Football}
 \cvlistdoubleitem{Hockey}{Soccer}
 
 %----------------------------------------------------------------------------------------
